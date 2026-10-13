@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Dylan Nicholls</title>
+  <meta name="description" content="Dylan Nicholls is a Yuwaalaraay documentary film director and producer, and founder of Wandarra Media. MA Screen: Documentary (AFTRS, 2024); inaugural Netflix First Nations Scholarship recipient.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>document.write('<link rel="stylesheet" href="css/style.css?v=' + Date.now() + '">');</script>
+  <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <span class="name">Dylan Nicholls</span>
+        <span class="role">Documentary Filmmaker</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="index.html">Work</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <div class="page-head">
+        <h1>About</h1>
+      </div>
+
+      <div class="about-intro">
+        <div class="about-portrait">
+          <img src="images/dylan-nicholls.jpg" alt="Portrait of Dylan Nicholls">
+          <p class="photo-credit">Photo by Flore Vallery-Radot</p>
+        </div>
+
+      <div class="prose">
+        <p>Dylan Nicholls is a documentary film director and producer.</p>
+
+        <p>He holds a Master of Arts Screen: Documentary (2024) from the Australian Film, Television and Radio School (AFTRS). He was the recipient of the inaugural <a href="https://www.aftrs.edu.au/news/2023/aftrs-announces-first-three-recipients-of-netflix-indigenous-scholarship-fund/" target="_blank" rel="noopener">Netflix First Nations Scholarship</a>, and completed an <a href="https://www.abc.net.au/about/media-centre/press-releases/abc-aidc-names-recipient-of-2025-indigenous-documentary-placemen/105321792" target="_blank" rel="noopener">AIDC x ABC Indigenous placement</a> in 2025.</p>
+
+        <p>A proud Yuwaalaraay man, Dylan is drawn to untold stories about First Nations people, community, history, identity and culture. Growing up in regional NSW, he has a particular love for stories from the bush and regional Australia. He works as a director and producer, with skills across camera operation and editing.</p>
+
+        <p>Dylan has a background as a Clinical Psychologist and Youth Worker.</p>
+
+        <div class="tags">
+          <span>First Nations</span>
+          <span>Community</span>
+          <span>History</span>
+          <span>Identity</span>
+          <span>Culture</span>
+        </div>
+      </div>
+      </div>
+
+      <section class="credits">
+        <h2>Awards &amp; Recognition</h2>
+        <div id="awards-list"></div>
+      </section>
+
+      <section class="credits">
+        <h2>Credits</h2>
+        <div id="credits-list"></div>
+      </section>
+
+      <section class="credits">
+        <h2>Additional credits</h2>
+        <div id="extra-credits-list"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="acknowledgement">Dylan lives and works on the lands of the Turrbal and Jagera peoples. He pays respect to Elders past and present, and to all Traditional Custodians of the Country where these stories are told.</p>
+      <div class="footer-row">
+        <span>© <span id="yr"></span> Dylan Nicholls</span>
+        <span>Brisbane / Meanjin, QLD · <a href="mailto:dylan.nicholls.film@gmail.com">dylan.nicholls.film@gmail.com</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Load film data + renderer, cache-busted so your edits to films.js
+       always show on reload (no stale cached copy). -->
+  <script>
+    (function () {
+      var v = Date.now();
+      document.write('<scr' + 'ipt src="js/films.js?v=' + v + '"><\/scr' + 'ipt>');
+      document.write('<scr' + 'ipt src="js/main.js?v=' + v + '"><\/scr' + 'ipt>');
+    })();
+  </script>
+  <script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
+</body>
+</html>

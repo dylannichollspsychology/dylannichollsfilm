@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Film — Dylan Nicholls</title>
+  <meta name="description" content="A documentary film by Dylan Nicholls.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>document.write('<link rel="stylesheet" href="css/style.css?v=' + Date.now() + '">');</script>
+  <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <span class="name">Dylan Nicholls</span>
+        <span class="role">Documentary Filmmaker</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="index.html" aria-current="page">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <article id="film-detail"></article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="acknowledgement">Dylan lives and works on the lands of the Turrbal and Jagera peoples. He pays respect to Elders past and present, and to all Traditional Custodians of the Country where these stories are told.</p>
+      <div class="footer-row">
+        <span>© <span id="yr"></span> Dylan Nicholls</span>
+        <span>Brisbane / Meanjin, QLD · <a href="mailto:dylan.nicholls.film@gmail.com">dylan.nicholls.film@gmail.com</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Load film data + renderer, cache-busted so your edits to films.js
+       always show on reload (no stale cached copy). -->
+  <script>
+    (function () {
+      var v = Date.now();
+      document.write('<scr' + 'ipt src="js/films.js?v=' + v + '"><\/scr' + 'ipt>');
+      document.write('<scr' + 'ipt src="js/main.js?v=' + v + '"><\/scr' + 'ipt>');
+    })();
+  </script>
+  <script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
+</body>
+</html>
